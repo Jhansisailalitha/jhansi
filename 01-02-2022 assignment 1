@@ -1,0 +1,65 @@
+#include<stdio.h>
+
+int main()
+{
+
+    int n, m, c, d, first[50][50], second[50][50], sum[50][50], diff[50][50];
+    printf(" rows and columns of the first matrix");
+    scanf("%d%d", &m, &n);
+
+    printf("Enter the %d elements of the first", m*n);
+    for(c = 0; c < m; c++)   
+        for(d = 0; d < n; d++)   
+            scanf("%d", &first[c][d]);
+
+    printf(" %d  second matrix", m*n);
+    for(c = 0; c < m; c++)  
+        for(d = 0; d < n; d++)   
+            scanf("%d", &second[c][d]);
+
+    printf("The first matrix is:");
+    for(c = 0; c < m; c++)   
+    {
+        for(d = 0; d < n; d++)  
+        {
+            printf("%d\t", first[c][d]);
+        }
+    printf("\n");
+    }
+
+    printf("\n\nThe second matrix is: \n\n");
+    for(c = 0; c < m; c++)   
+    {
+        for(d = 0; d < n; d++)  
+        {
+            printf("%d\t", second[c][d]);
+        }
+    printf("\n");
+    }
+    for(c = 0; c < m; c++)
+        for(d = 0; d < n; d++)
+            sum[c][d] = first[c][d] + second[c][d];
+    printf("\n\nThe sum of the two entered matrices is: \n\n");
+    for(c = 0; c < m; c++)
+    {
+        for(d = 0; d < n; d++)
+        {
+            printf("%d\t", sum[c][d]);
+        }
+        printf("\n");
+    }
+
+    for(c = 0; c < m; c++)
+        for(d = 0; d < n; d++)
+            diff[c][d] = first[c][d] - second[c][d];
+    printf("(subtraction:");
+    for(c = 0; c < m; c++)
+    {
+        for(d = 0; d < n; d++)
+        {
+            printf("%d\t", diff[c][d]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
