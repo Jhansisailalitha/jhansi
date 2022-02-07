@@ -1,0 +1,21 @@
+#include<stdio.h>
+        struct student
+        {
+          int S1,S2,S3;
+        
+        };
+            void main()
+        {
+             struct student s[30];
+             int i,total=0,avg=0;
+            
+             for(i=0;i<=2;i++)
+                 {
+                        printf("\nEnter Marks in Three Subjects = ");
+                        scanf("%d%d%d",&s[i].S1,&s[i].S2,&s[i].S3);
+                        total=s[i].S1+s[i].S2+s[i].S3;
+                        avg=s[i].S1+s[i].S2+s[i].S3/3;
+                        printf("\nTotal marks of s[%d] Student=  %d avg=%d",i,total,avg);
+                 }
+                        
+         }
