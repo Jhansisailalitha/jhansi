@@ -1,0 +1,22 @@
+int main()
+{
+    char name[100];
+    int i;
+
+    printf("enter name");
+    scanf("%s",&name);
+    printf("the given name is");
+    for(i=0;name[i]!='\0';i++)
+    {
+        if(name[i]=='Z')
+        putchar('A');
+        else
+        if(name[i]=='z')
+        putchar('a');
+        else
+        putchar(name[i]+1);
+        
+    }
+
+    return 0;
+}
