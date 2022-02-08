@@ -1,0 +1,25 @@
+#include<stdio.h>  
+void display(int);  
+  
+int main()  
+{  
+    int n;  
+  
+    printf("Enter n value:");  
+    scanf("%d", &n);  
+  
+    printf( "range is %d :",n);  
+    display(n);  
+  
+    return 0;  
+}  
+  
+void display(int n)  
+{  
+    if(n)  
+        display(n-1);  
+    else  
+      
+  return;
+    printf("%d", n);  
+}  
