@@ -1,0 +1,16 @@
+#include <stdio.h>            
+void main()
+{            
+int number=30;        
+int *p;     
+p=&number;       
+printf("Address of p variable is %u \n",p); 
+p=p+1;
+printf("After increment: Address of p variable is %u \n",p);
+p=p-1;       
+printf("After decrement: Address of p variable is %u \n",p);
+p=p+3;
+printf("After sum: Address of p variable is %u \n",p);
+p=p-31;
+printf("After sub: Address of p variable is %u \n",p);
+}      
